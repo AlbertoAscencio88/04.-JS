@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <img src="img/pokedex.png" alt="">
+
+        <div class="pantalla" >
+            <img id="pokeImg" src="img/pokeball.jpg" alt="">
+        </div>    
+    <!-- buscador -->
+        <div class="buscador">
+            <input type="text" id="pokeName" name="pokeName" placeholder="Pokemon">
+            
+        </div>
+    <!-- botones     -->
+        <div>
+            <button type="button" id="search" onclick="fetchPokemon()"></button>
+            <button type="reset" id="reset" onclick="reset()"></button>
+            <div class="pad">
+                <button type="button" id="up" onclick="up()"></button>
+                <button type="button" id="down" onclick="down()" ></button>
+                <button type="button" id="left" onclick="left()"></button>
+                <button type="button" id="right" onclick="right()"></button>
+            </div>
+        </div>
+    <!-- lado derecho -->
+        <div class="pantalla_derecha">
+            <div>
+                <h3>HP =</h3>
+                <h3 id="pokeStatsHp"></h3>
+            </div>
+            <div>
+                <h3>Atk =</h3>
+            <h3 id="pokeStatsAtk"></h3>
+            </div>
+            <div>
+                <h3>Def =</h3>
+            <h3 id="pokeStatsDef"></h3>
+            </div>
+            <div>
+                <h3>Speed =</h3>
+                <h3 id="pokeStatsVel"></h3>
+            </div>
+                        
+        </div>
+        <div class="type"></div>
+        <div class="type_text"></div>
+
+        <div class="tipo" >
+            <h3 id="types">Tipos</h3>
+        </div>
+        <div class="tipo2">
+            <h3 id="moves">Movimientos</h3>
+                
+        </div>
+    
+
+    </div>
+
+
+
+
+</body>
+<footer>
+    <script src="pokedex.js"></script>
+</footer>
+</html>
